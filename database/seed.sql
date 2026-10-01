@@ -10,5 +10,5 @@ INSERT INTO tasks (title, status, task_date, created_at) VALUES
 ('IT0037: Title Proposal', 'pending', '2026-10-05', '2026-09-29 08:00:00'),
 ('Networking 2: CCST', 'pending', '2026-10-05', '2026-09-29 08:00:00');
 
-INSERT INTO users (username, full_name, email, created_at) VALUES
-('joseph', 'Joseph', 'joseph@example.com', '2026-09-29 08:00:00');
+INSERT INTO users (username, full_name, email, password, created_at) VALUES
+('joseph', 'Joseph', 'joseph@example.com', '$2y$12$aypS1VhxDP0ny69soE3ZjuOPAgsZY.veQqG1gpd2OUJpScwP7XVf2', '2026-09-29 08:00:00');

@@ -31,6 +31,7 @@ class TaskSeeder extends Seeder
                 'username'   => 'joseph',
                 'full_name'  => 'Joseph',
                 'email'      => 'joseph@example.com',
+                'password'   => password_hash('Today2026!', PASSWORD_DEFAULT),
                 'created_at' => $createdAt,
             ]);
         }

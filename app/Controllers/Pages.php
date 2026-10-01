@@ -8,10 +8,12 @@ class Pages extends BaseController
 {
     public function profile(): string
     {
+        $user = (new UserModel())->demoUser();
+
         return view('pages/profile', [
             'title'       => 'Profile',
             'currentPage' => 'profile',
-            'user'        => (new UserModel())->demoUser(),
+            'user'        => $user,
         ]);
     }
 

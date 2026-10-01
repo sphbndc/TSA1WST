@@ -3,6 +3,7 @@ CREATE TABLE tasks (
   title VARCHAR(150) NOT NULL,
   status VARCHAR(20) NOT NULL DEFAULT 'pending',
   task_date DATE NOT NULL,
+  is_archived TINYINT(1) NOT NULL DEFAULT 0,
   created_at DATETIME NOT NULL,
   INDEX idx_tasks_task_date (task_date)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -12,5 +13,6 @@ CREATE TABLE users (
   username VARCHAR(50) NOT NULL UNIQUE,
   full_name VARCHAR(100) NOT NULL,
   email VARCHAR(100) NOT NULL,
+  password VARCHAR(255) NOT NULL,
   created_at DATETIME NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

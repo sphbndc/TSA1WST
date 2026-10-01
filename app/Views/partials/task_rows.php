@@ -11,6 +11,15 @@
                 </div>
                 <span class="status <?= $completed ? 'completed' : 'pending' ?>"><?= esc(ucfirst($task['status'])) ?></span>
                 <time datetime="<?= esc($task['task_date']) ?>"><?= date('M j, Y', strtotime($task['task_date'])) ?></time>
+                <?php if (session()->get('userId')): ?>
+                    <div class="task-actions">
+                        <a href="/tasks/<?= esc($task['id']) ?>/edit">Edit</a>
+                        <form action="/tasks/<?= esc($task['id']) ?>/delete" method="post" onsubmit="return confirm('Archive this task?')">
+                            <?= csrf_field() ?>
+                            <button type="submit">Delete</button>
+                        </form>
+                    </div>
+                <?php endif; ?>
             </article>
         <?php endforeach; ?>
     </div>
