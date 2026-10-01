@@ -59,6 +59,7 @@ The demo login is `joseph` with password `Today2026!`.
 
    ```ini
    CI_ENVIRONMENT = production
+   app.baseURL = 'http://daybooktsa1.infinityfreeapp.com/'
    database.default.hostname = sqlXXX.infinityfree.com
    database.default.database = if0_XXXXXXXX_tasks
    database.default.username = if0_XXXXXXXX

@@ -16,7 +16,7 @@ class App extends BaseConfig
 
 
 
-    public string $baseURL = 'http://localhost:8080/';
+    public string $baseURL = 'http://daybooktsa1.infinityfreeapp.com/';
 
 
 
@@ -40,7 +40,7 @@ class App extends BaseConfig
 
 
 
-    public string $indexPage = 'index.php';
+    public string $indexPage = '';
 
 
 
