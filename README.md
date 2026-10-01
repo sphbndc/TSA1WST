@@ -2,6 +2,15 @@
 
 An IT0049 task manager built with CodeIgniter 4, PHP, and MySQL. Public pages show tasks and profile information. Logged-in users can create, edit, and archive tasks.
 
+## Live demo
+
+You can use the hosted version without installing PHP or running the project locally: [Open Tasks for Today](http://daybooktsa1.infinityfreeapp.com/). The site is hosted on InfinityFree.
+
+Use the demo account to try task management:
+
+- Username: `joseph`
+- Password: `Today2026!`
+
 ## Requirements
 
 - PHP 8.2 or newer
